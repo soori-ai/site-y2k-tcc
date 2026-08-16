@@ -1,14 +1,552 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>2000Stars ♥ Moda</title><link rel="stylesheet" href="css/style.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2000Stars ♥ Moda</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ===== VITRINE 2000STARS ===== */
+
+    .shop-intro {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 2px dashed #ff69b4;
+      background: #fff5fc;
+    }
+
+    .shop-intro h1 {
+      margin: 5px 0;
+      font-size: 30px;
+    }
+
+    .shop-intro p {
+      margin: 5px 0;
+    }
+
+    .shop-category {
+      margin-bottom: 35px;
+    }
+
+    .category-title {
+      text-align: center;
+      font-size: 22px;
+      margin: 20px 0 15px;
+      padding: 8px;
+      border-top: 2px dotted #ff69b4;
+      border-bottom: 2px dotted #ff69b4;
+      letter-spacing: 1px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .product-card {
+      background: #fff;
+      border: 2px solid #ff9ed0;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 3px 3px 0 #ffc7e5;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px) rotate(-1deg);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 10px;
+      border: 1px solid #ffd1e8;
+    }
+
+    .product-card h2 {
+      font-size: 15px;
+      margin: 7px 0 4px;
+      text-transform: uppercase;
+    }
+
+    .product-card .price {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 5px 0 9px;
+    }
+
+    .buy-button {
+      display: inline-block;
+      border: 2px solid #222;
+      background: #ff8dcc;
+      padding: 6px 12px;
+      font-family: inherit;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .buy-button:hover {
+      background: #ffc1e4;
+    }
+
+    @media (max-width: 900px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-card img {
+        height: 250px;
+      }
+    }
+  </style>
+
+</head>
+
 <body>
+
 <div class="site-shell">
-<header class="top"><div class="top-mini">♥ welcome to my little internet corner ♥</div><div class="brand-row"><div><div class="brand">2000<span>STARS</span></div><div class="tagline">Y2K FASHION • BEAUTY • LIFESTYLE</div></div><div class="badge">★ EST. 2000 ★<br><small>internet diary</small></div></div>
-<nav class="main-nav"><a href="index.html">HOME</a><a class="active" href="moda.html">MODA</a><a href="beleza.html">BELEZA</a><a href="tendencias.html">TENDÊNCIAS</a><a href="quiz.html">QUIZ ♥</a><a href="sobre.html">SOBRE</a></nav></header>
-<div class="content-grid"><aside class="sidebar"><div class="side-box"><div class="side-title">★ FASHION FILES</div><a class="side-link" href="#baby">♡ Baby tee</a><a class="side-link" href="#denim">♡ Denim</a><a class="side-link" href="#cargo">♡ Cargo</a><a class="side-link" href="#accessories">♡ Acessórios</a></div><div class="side-box"><div class="side-title">♥ QUICK LINKS</div><a class="side-link" href="index.html">♡ Home</a><a class="side-link" href="quiz.html">♡ Fazer o quiz</a></div></aside>
-<main class="main"><section class="page-head"><span>★ FASHION DIARY ★</span><h1>MODA Y2K</h1><p>Pink, denim, glitter e muita personalidade.</p></section>
-<article class="post" id="baby"><div class="post-date">01 • BABY TEE</div><h1>O RETORNO DAS BABY TEES</h1><div class="fake-photo photo-blue">BABY<br>TEE<br>♡</div><p>A baby tee é uma das peças mais reconhecíveis da estética Y2K. Com modelagem mais curta e ajustada, ela combina facilmente com jeans, saias, calças cargo e sobreposições.</p><p>Para trazer a referência para hoje, vale misturar uma baby tee com uma peça mais neutra. Assim, o look fica inspirado nos anos 2000 sem parecer uma fantasia de época.</p></article>
-<article class="post" id="denim"><div class="post-date">02 • DENIM</div><h1>JEANS + ROSA = MATCH PERFEITO</h1><div class="fake-photo photo-denim">DENIM<br>&amp;<br>PINK</div><p>O azul-jeans funciona como uma base perfeita para cores vibrantes. Rosa chiclete, rosa bebê e detalhes prateados criam aquele contraste que imediatamente lembra a estética pop dos anos 2000.</p><div class="tip-box">♥ DICA 2000STARS: use o jeans como base e deixe os acessórios fazerem o barulho!</div></article>
-<article class="post" id="cargo"><div class="post-date">03 • CARGO</div><h1>CALÇA CARGO: PRÁTICA E COOL</h1><p>Bolsos grandes, modelagem confortável e uma pegada utilitária. A cargo pode ser combinada com tops mais delicados, bolsas pequenas e acessórios brilhantes para criar o contraste típico do Y2K.</p></article>
-<article class="post" id="accessories"><div class="post-date">04 • ACCESSORIES</div><h1>OS DETALHES FAZEM O LOOK</h1><p>Mini bags, óculos coloridos, presilhas, cintos, colares, brincos grandes e acessórios metálicos ajudam a construir a estética. No Y2K, exagerar um pouquinho faz parte da diversão. ✦</p></article>
-</main></div><footer>★ 2000STARS ★ Y2K FASHION DIARY ★<br><small>Made with pink pixels, glitter & internet nostalgia ♡</small></footer></div><script src="js/script.js"></script></body></html>
+
+<header class="top">
+  <div class="top-mini">♥ welcome to my little internet corner ♥</div>
+
+  <div class="brand-row">
+    <div>
+      <div class="brand">2000<span>STARS</span></div>
+      <div class="tagline">Y2K FASHION • BEAUTY • LIFESTYLE</div>
+    </div>
+
+```
+<div class="badge">
+  ★ EST. 2000 ★<br>
+  <small>internet diary</small>
+</div>
+```
+
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a class="active" href="moda.html">MODA</a>
+    <a href="beleza.html">BELEZA</a>
+    <a href="tendencias.html">TENDÊNCIAS</a>
+    <a href="quiz.html">QUIZ ♥</a>
+    <a href="sobre.html">SOBRE</a>
+  </nav>
+</header>
+
+<div class="content-grid">
+
+<aside class="sidebar">
+
+  <div class="side-box">
+    <div class="side-title">★ SHOPPING</div>
+
+```
+<a class="side-link" href="#baby">♡ Baby Tees</a>
+<a class="side-link" href="#calcas">♡ Calças</a>
+<a class="side-link" href="#saias">♡ Saias</a>
+<a class="side-link" href="#bags">♡ Mini Bags</a>
+<a class="side-link" href="#oculos">♡ Óculos</a>
+<a class="side-link" href="#presilhas">♡ Presilhas</a>
+<a class="side-link" href="#cintos">♡ Cintos</a>
+<a class="side-link" href="#argolas">♡ Argolas</a>
+```
+
+  </div>
+
+  <div class="side-box">
+    <div class="side-title">♥ QUICK LINKS</div>
+
+```
+<a class="side-link" href="index.html">♡ Home</a>
+<a class="side-link" href="quiz.html">♡ Fazer o quiz</a>
+```
+
+  </div>
+
+  <div class="side-box">
+    <div class="side-title">★ SHOP NOTE</div>
+    <p>
+      Todas as peças foram escolhidas para representar a estética
+      divertida, colorida e nostálgica da 2000STARS. ♡
+    </p>
+  </div>
+
+</aside>
+
+<main class="main">
+
+  <section class="shop-intro">
+    <div>★ 2000STARS COLLECTION ★</div>
+    <h1>Y2K SHOP ♥</h1>
+    <p>
+      Seu closet acabou de entrar nos anos 2000.
+      Escolha suas peças favoritas! ✦
+    </p>
+  </section>
+
+  <!-- BABY TEES -->
+
+  <section class="shop-category" id="baby">
+
+```
+<div class="category-title">★ BABY TEES ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/baby-tee-azul.jpeg" alt="Baby Tee Azul">
+    <h2>Baby Tee Azul</h2>
+    <p class="price">R$ 40,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/baby-tee-cereja.jpeg" alt="Baby Tee Cereja">
+    <h2>Baby Tee Cereja</h2>
+    <p class="price">R$ 40,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/baby-tee-rosa.jpeg" alt="Baby Tee Rosa">
+    <h2>Baby Tee Rosa</h2>
+    <p class="price">R$ 40,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/baby-tee-vermelha.jpeg" alt="Baby Tee Vermelha">
+    <h2>Baby Tee Vermelha</h2>
+    <p class="price">R$ 40,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CALÇAS -->
+
+  <section class="shop-category" id="calcas">
+
+```
+<div class="category-title">★ CALÇAS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/calca-baggy.jpeg" alt="Calça Baggy">
+    <h2>Calça Baggy</h2>
+    <p class="price">R$ 60,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/calca-flare.jpeg" alt="Calça Flare">
+    <h2>Calça Flare</h2>
+    <p class="price">R$ 60,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/calca-moletom.jpeg" alt="Calça Moletom">
+    <h2>Calça Moletom</h2>
+    <p class="price">R$ 60,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/calca-rosa.jpeg" alt="Calça Rosa">
+    <h2>Calça Rosa</h2>
+    <p class="price">R$ 60,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- SAIAS -->
+
+  <section class="shop-category" id="saias">
+
+```
+<div class="category-title">★ SAIAS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/saia-branca-onça.jpeg" alt="Saia Branca Onça">
+    <h2>Saia Branca Onça</h2>
+    <p class="price">R$ 50,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/saia-jeans-cruz.jpeg" alt="Saia Jeans Cruz">
+    <h2>Saia Jeans Cruz</h2>
+    <p class="price">R$ 50,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/saia-jeans-rodada.jpeg" alt="Saia Jeans Rodada">
+    <h2>Saia Jeans Rodada</h2>
+    <p class="price">R$ 50,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/saia-zebra-print.jpeg" alt="Saia Zebra Print">
+    <h2>Saia Zebra Print</h2>
+    <p class="price">R$ 50,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- MINI BAGS -->
+
+  <section class="shop-category" id="bags">
+
+```
+<div class="category-title">★ MINI BAGS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/mini-baggy-azul.jpeg" alt="Mini Bag Azul">
+    <h2>Mini Bag Azul</h2>
+    <p class="price">R$ 65,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/mini-baggy-blackpink.jpeg" alt="Mini Bag Blackpink">
+    <h2>Mini Bag Blackpink</h2>
+    <p class="price">R$ 65,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/mini-baggy-creme.jpeg" alt="Mini Bag Creme">
+    <h2>Mini Bag Creme</h2>
+    <p class="price">R$ 65,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/mini-roxa-azul.jpeg" alt="Mini Bag Roxa Azul">
+    <h2>Mini Bag Roxa Azul</h2>
+    <p class="price">R$ 65,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ÓCULOS -->
+
+  <section class="shop-category" id="oculos">
+
+```
+<div class="category-title">★ ÓCULOS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/oculos-ambar.jpeg" alt="Óculos Âmbar">
+    <h2>Óculos Âmbar</h2>
+    <p class="price">R$ 30,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/oculos-azul.jpeg" alt="Óculos Azul">
+    <h2>Óculos Azul</h2>
+    <p class="price">R$ 30,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/oculos-preto.jpeg" alt="Óculos Preto">
+    <h2>Óculos Preto</h2>
+    <p class="price">R$ 30,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/oculos-rosa-dior.jpeg" alt="Óculos Rosa Dior">
+    <h2>Óculos Rosa Dior</h2>
+    <p class="price">R$ 30,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- PRESILHAS -->
+
+  <section class="shop-category" id="presilhas">
+
+```
+<div class="category-title">★ PRESILHAS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/presilha-brilhante.jpeg" alt="Presilha Brilhante">
+    <h2>Presilha Brilhante</h2>
+    <p class="price">R$ 15,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/presilha-oncinha.jpeg" alt="Presilha Oncinha">
+    <h2>Presilha Oncinha</h2>
+    <p class="price">R$ 15,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/presilha-prateada.jpeg" alt="Presilha Prateada">
+    <h2>Presilha Prateada</h2>
+    <p class="price">R$ 15,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/presilhas-coloridas.jpeg" alt="Presilhas Coloridas">
+    <h2>Presilhas Coloridas</h2>
+    <p class="price">R$ 15,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CINTOS -->
+
+  <section class="shop-category" id="cintos">
+
+```
+<div class="category-title">★ CINTOS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/cinto-alt.jpeg" alt="Cinto ALT">
+    <h2>Cinto ALT</h2>
+    <p class="price">R$ 35,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/cinto-metal-dorado.jpeg" alt="Cinto Metal Dourado">
+    <h2>Cinto Metal Dourado</h2>
+    <p class="price">R$ 35,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/cinto-oncinha.jpeg" alt="Cinto Oncinha">
+    <h2>Cinto Oncinha</h2>
+    <p class="price">R$ 35,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/cinto-prata.jpeg" alt="Cinto Prata">
+    <h2>Cinto Prata</h2>
+    <p class="price">R$ 35,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ARGOLAS -->
+
+  <section class="shop-category" id="argolas">
+
+```
+<div class="category-title">★ ARGOLAS ★</div>
+
+<div class="product-grid">
+
+  <div class="product-card">
+    <img src="imagens/argola-coracao-prata.png" alt="Argola Coração Prata">
+    <h2>Argola Coração Prata</h2>
+    <p class="price">R$ 20,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/argola-dourada.jpeg" alt="Argola Dourada">
+    <h2>Argola Dourada</h2>
+    <p class="price">R$ 20,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/argola-oncinha.jpeg" alt="Argola Oncinha">
+    <h2>Argola Oncinha</h2>
+    <p class="price">R$ 20,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+  <div class="product-card">
+    <img src="imagens/argola-prata.jpeg" alt="Argola Prata">
+    <h2>Argola Prata</h2>
+    <p class="price">R$ 20,00</p>
+    <a class="buy-button" href="#">COMPRAR ♥</a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+</main>
+
+</div>
+
+<footer>
+  ★ 2000STARS ★ Y2K FASHION DIARY ★<br>
+  <small>Made with pink pixels, glitter & internet nostalgia ♡</small>
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
