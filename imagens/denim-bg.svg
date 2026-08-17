@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+
+  <defs>
+
+    <!-- Textura do tecido jeans -->
+    <pattern id="denim" width="12" height="12" patternUnits="userSpaceOnUse">
+
+      <!-- base azul denim -->
+      <rect width="12" height="12" fill="#3f6f88"/>
+
+      <!-- fios diagonais claros -->
+      <path
+        d="M-3 3 L3 -3 M0 12 L12 0 M9 15 L15 9"
+        stroke="#8eafbd"
+        stroke-width="2"
+        opacity="0.65"
+      />
+
+      <!-- fios diagonais escuros -->
+      <path
+        d="M-3 9 L9 -3 M3 15 L15 3"
+        stroke="#244d65"
+        stroke-width="2"
+        opacity="0.75"
+      />
+
+      <!-- pequenos fios claros -->
+      <path
+        d="M2 0 L2 12 M8 0 L8 12"
+        stroke="#b8cbd3"
+        stroke-width="0.6"
+        opacity="0.25"
+      />
+
+    </pattern>
+
+    <!-- leve brilho do tecido -->
+    <radialGradient id="shine" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#a9c3ce" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#5d879b" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#173e55" stop-opacity="0.35"/>
+    </radialGradient>
+
+  </defs>
+
+
+  <!-- BOLINHA 1 -->
+  <circle
+    cx="150"
+    cy="140"
+    r="42"
+    fill="url(#denim)"
+  />
+  <circle
+    cx="150"
+    cy="140"
+    r="42"
+    fill="url(#shine)"
+  />
+
+
+  <!-- BOLINHA 2 -->
+  <circle
+    cx="700"
+    cy="175"
+    r="34"
+    fill="url(#denim)"
+  />
+  <circle
+    cx="700"
+    cy="175"
+    r="34"
+    fill="url(#shine)"
+  />
+
+
+  <!-- BOLINHA 3 -->
+  <circle
+    cx="400"
+    cy="535"
+    r="52"
+    fill="url(#denim)"
+  />
+  <circle
+    cx="400"
+    cy="535"
+    r="52"
+    fill="url(#shine)"
+  />
+
+
+  <!-- BOLINHA 4 -->
+  <circle
+    cx="820"
+    cy="560"
+    r="43"
+    fill="url(#denim)"
+  />
+  <circle
+    cx="820"
+    cy="560"
+    r="43"
+    fill="url(#shine)"
+  />
+
+
+  <!-- BOLINHA 5 -->
+  <circle
+    cx="55"
+    cy="610"
+    r="28"
+    fill="url(#denim)"
+  />
+  <circle
+    cx="55"
+    cy="610"
+    r="28"
+    fill="url(#shine)"
+  />
+
+
+  <!-- BOLINHA 6 -->
+  <circle
+    cx="275"
+    cy="350"
+    r="37"
+    fill="url(#denim)"
+  />
+  <circle
+    cx="275"
+    cy="350"
+    r="37"
+    fill="url(#shine)"
+  />
+
+</svg>
