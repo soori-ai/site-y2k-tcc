@@ -23,15 +23,26 @@ body {
   color: #3d1635;
   font-family: "Trebuchet MS", Arial, sans-serif;
   background-color: #f7a2cf;
+
   background-image:
-    radial-gradient(ellipse at 18% 22%, #426A82 0 5%, transparent 6%),
-    radial-gradient(ellipse at 75% 28%, #426A82 0 4%, transparent 5%),
-    radial-gradient(ellipse at 44% 76%, #426A82 0 6%, transparent 7%),
-    radial-gradient(ellipse at 87% 82%, #426A82 0 5%, transparent 6%),
-    radial-gradient(ellipse at 6% 86%, #426A82 0 3%, transparent 4%),
-    radial-gradient(ellipse at 30% 48%, #426A82 0 4%, transparent 5%);
-  background-size: 150px 130px, 180px 150px, 210px 170px, 190px 160px, 160px 140px, 230px 180px;
+    /* textura jeans das bolinhas */
+    radial-gradient(ellipse at 18% 22%, #315b73 0 4%, #4f7890 4.5% 5%, transparent 6%),
+    radial-gradient(ellipse at 75% 28%, #315b73 0 3%, #62879b 3.5% 4%, transparent 5%),
+    radial-gradient(ellipse at 44% 76%, #315b73 0 5%, #62879b 5.5% 6%, transparent 7%),
+    radial-gradient(ellipse at 87% 82%, #315b73 0 4%, #62879b 4.5% 5%, transparent 6%),
+    radial-gradient(ellipse at 6% 86%, #315b73 0 2.5%, #62879b 3% 3%, transparent 4%),
+    radial-gradient(ellipse at 30% 48%, #315b73 0 3%, #62879b 3.5% 4%, transparent 5%);
+
+  background-size:
+    150px 130px,
+    180px 150px,
+    210px 170px,
+    190px 160px,
+    160px 140px,
+    230px 180px;
+
   background-blend-mode: multiply;
+}
 }
 
 
