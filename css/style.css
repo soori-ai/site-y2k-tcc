@@ -24,15 +24,16 @@ body {
   font-family: "Trebuchet MS", Arial, sans-serif;
   background-color: #f7a2cf;
   background-image:
-    radial-gradient(ellipse at 18% 22%, #241018 0 5%, transparent 6%),
-    radial-gradient(ellipse at 75% 28%, #241018 0 4%, transparent 5%),
-    radial-gradient(ellipse at 44% 76%, #241018 0 6%, transparent 7%),
-    radial-gradient(ellipse at 87% 82%, #241018 0 5%, transparent 6%),
-    radial-gradient(ellipse at 6% 86%, #241018 0 3%, transparent 4%),
-    radial-gradient(ellipse at 30% 48%, #241018 0 4%, transparent 5%);
+    radial-gradient(ellipse at 18% 22%, #426A82 0 5%, transparent 6%),
+    radial-gradient(ellipse at 75% 28%, #426A82 0 4%, transparent 5%),
+    radial-gradient(ellipse at 44% 76%, #426A82 0 6%, transparent 7%),
+    radial-gradient(ellipse at 87% 82%, #426A82 0 5%, transparent 6%),
+    radial-gradient(ellipse at 6% 86%, #426A82 0 3%, transparent 4%),
+    radial-gradient(ellipse at 30% 48%, #426A82 0 4%, transparent 5%);
   background-size: 150px 130px, 180px 150px, 210px 170px, 190px 160px, 160px 140px, 230px 180px;
   background-blend-mode: multiply;
 }
+
 
 body::before {
   content: "";
