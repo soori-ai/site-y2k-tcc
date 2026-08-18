@@ -91,6 +91,5 @@ document.addEventListener("DOMContentLoaded", () => {
   <p>${results[winner].text}</p>
   <p>★ Seu resultado foi calculado com base nas suas escolhas! ★</p>
 `;
-    });
-  }
-});
+    quizResult.classList.remove("hidden");
+quizResult.scrollIntoView({behavior: "smooth", block: "center"});
