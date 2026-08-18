@@ -63,25 +63,25 @@ document.addEventListener("DOMContentLoaded", () => {
   pink: {
     title: "PINK PRINCESS 🎀",
     text: "Você ama rosa, peças fofas e uma estética pop. Seu look ideal tem baby tee, mini bag, gloss e MUITO pink!",
-    image: "images/pink-princess.jpeg"
+    image: "pink-princess.jpeg"
   },
 
   denim: {
     title: "DENIM GIRL 👖",
     text: "Você é a cool girl do grupo. Jeans, cargo, tênis e acessórios statement são a sua combinação perfeita.",
-    image: "images/denim-girl.jpeg"
+    image: "denim-girl.jpeg"
   },
 
   glam: {
     title: "GLAM QUEEN ✨",
     text: "Brilho nunca é demais para você. Metalizados, glitter, gloss e acessórios chamativos fazem parte do seu universo.",
-    image: "images/glam-queen.jpeg"
+    image: "glam-queen.jpeg"
   },
 
   cyber: {
     title: "CYBER CUTIE 🦋",
     text: "Você tem uma vibe futurista e divertida. Óculos coloridos, estrelas, detalhes diferentes e referências de internet são sua cara.",
-    image: "images/cyber-cutie.jpeg"
+    image: "cyber-cutie.jpeg"
   }
     };
 
