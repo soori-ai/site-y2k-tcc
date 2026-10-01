@@ -1,5 +1,9 @@
 // 2000STARS — interações do site
 
+emailjs.init({
+  publicKey: "MvHyxfwrbd-Hs3Qz"
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 
   // =========================================================
@@ -461,8 +465,8 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
 
           await emailjs.send(
-            "SEU_SERVICE_ID",
-            "SEU_TEMPLATE_ID",
+          "service_373jv9t",
+          "template_tlz4svb",
             {
               customer_email: email,
               product_name: productName,
