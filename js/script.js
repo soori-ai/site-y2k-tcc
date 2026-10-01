@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (typeof emailjs !== "undefined") {
     emailjs.init({
-      publicKey: "MvHyxfwrbd-Hs3Qz"
-    });
+      publicKey: "MvHyxfwrbd-Hs3Qz8
   }
 
 
