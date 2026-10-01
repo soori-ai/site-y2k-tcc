@@ -6,11 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // EMAILJS
   // =========================================================
 
-  if (typeof emailjs !== "undefined") {
-    emailjs.init({
-      publicKey: "MvHyxfwrbd-Hs3Qz8
-  }
-
+emailjs.init({
+  publicKey: "MvHyxfwrbd-Hs3Qz8"
+});
 
   // =========================================================
   // CONTADOR DE VISITAS
