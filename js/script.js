@@ -1,24 +1,23 @@
 // 2000STARS — interações do site
 
-emailjs.init({
-  publicKey: "MvHyxfwrbd-Hs3Qz"
-});
-
 document.addEventListener("DOMContentLoaded", () => {
+
+  // =========================================================
+  // EMAILJS
+  // =========================================================
+
+  if (typeof emailjs !== "undefined") {
+    emailjs.init({
+      publicKey: "MvHyxfwrbd-Hs3Qz"
+    });
+  }
+
 
   // =========================================================
   // CONTADOR DE VISITAS
   // =========================================================
 
   const counter = document.getElementById("counter");
-
-  if (counter) {
-    let visits = Number(localStorage.getItem("2000starsVisits") || "1337");
-    visits += 1;
-
-    localStorage.setItem("2000starsVisits", visits);
-    counter.textContent = String(visits).padStart(6, "0");
-  }
 
 
   // =========================================================
