@@ -17,7 +17,25 @@ document.addEventListener("DOMContentLoaded", () => {
   // CONTADOR DE VISITAS
   // =========================================================
 
-  const counter = document.getElementById("counter");
+ const counter = document.getElementById("counter");
+
+if (counter) {
+
+  let visits = Number(
+    localStorage.getItem("2000starsVisits") || "1337"
+  );
+
+  visits += 1;
+
+  localStorage.setItem(
+    "2000starsVisits",
+    visits
+  );
+
+  counter.textContent =
+    String(visits).padStart(6, "0");
+
+}
 
 
   // =========================================================
