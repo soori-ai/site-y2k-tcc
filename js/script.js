@@ -478,17 +478,13 @@ document.addEventListener("DOMContentLoaded", () => {
             "E-mail de confirmação enviado com sucesso!"
           );
 
-        } catch (error) {
+       } catch (error) {
 
-          console.error(
-            "Erro ao enviar e-mail:",
-            error
-          );
+  console.error("ERRO COMPLETO DO EMAILJS:", error);
+  console.error("STATUS:", error?.status);
+  console.error("TEXTO:", error?.text);
 
-        }
-
-      }
-
+}
     });
 
   });
